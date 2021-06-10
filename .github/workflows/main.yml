@@ -14,7 +14,7 @@ jobs:
           git config user.email github-actions@github.com
           git remote add -f ipfs https://github.com/ipfs-examples/js-ipfs-test.git
           git checkout -b upstream ipfs/main
-          git subtree split -P examples/example1 -b example1
+          git subtree split -P examples/example1 -b example # change "examples/example1" to the proper folder
           git checkout master
-          git merge -s recursive -Xtheirs example1 --allow-unrelated-histories --no-edit
+          git merge -s recursive -Xtheirs example --allow-unrelated-histories --no-edit
           git push
