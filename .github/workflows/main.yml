@@ -16,5 +16,5 @@ jobs:
           git checkout -b upstream ipfs/main
           git subtree split -P examples/example1 -b example1
           git checkout master
-          git merge -s resolve example1 --allow-unrelated-histories --no-edit
+          git merge -s recursive -Xtheirs example1 --allow-unrelated-histories --no-edit
           git push
