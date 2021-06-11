@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           # Helper function to check if repo exist
+
           git-remote-url-reachable() {
-            git ls-remote "$1" CHECK_GIT_REMOTE_URL_REACHABILITY >/dev/null 2>&1
+            git ls-remote "$1" CHECK_GIT_REMOTE_URL_REACHABILITY &>/dev/null
           }
 
           ####### region: Configurations
@@ -41,25 +42,22 @@ jobs:
           git config user.name "$GITHUB_USERNAME"
           git config user.email "$GITHUB_EMAIL"
           
-          echo "Check if repo exists"
+          echo "Check if repo $DESTINATION_URL exists"
           git remote add -f source "$DESTINATION_URL"
           git checkout -b upstream "source/$DESTINATION_BRANCH"
           
-          echo "Get latest files"
+          echo "Get latest files for $DESTINATION_FOLDER_PATH"
           git subtree split -P "$DESTINATION_FOLDER_PATH" -b example
           git checkout master
           
-          git diff master..example
-          git merge -s recursive -Xtheirs example --allow-unrelated-histories --no-edit
-
-          echo "Log git status:"
-          git status
-
-          echo "Check if exist changes and push changes"
-          if git diff-index --quiet HEAD
+          echo "Check if exist changes"
+          if git diff master..example &>/dev/null
           then
-              echo "Does not exist any changes."
+            echo "Merging changes..."
+            git merge -s recursive -Xtheirs example --allow-unrelated-histories --no-edit
+
+            echo "Pushing changes..."
+            git push
           else
-              echo "Pushing changes..."
-              git push
+            echo "Does not exist any changes."
           fi
