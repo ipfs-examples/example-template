@@ -48,6 +48,8 @@ jobs:
           echo "Get latest files"
           git subtree split -P "$DESTINATION_FOLDER_PATH" -b example
           git checkout master
+          
+          git diff master..example
           git merge -s recursive -Xtheirs example --allow-unrelated-histories --no-edit
 
           echo "Log git status:"
