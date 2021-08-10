@@ -4,21 +4,21 @@
   </a>
 </p>
 
-<h3 align="center"><b>TODO:</b> <i>Example Name</i></h3>
+<h3 align="center"><b>TODO: Example Name</b></h3>
 
 <p align="center">
-    <b>TODO:</b> <i>Example Description</i>
+    <b><i>TODO: Example Description</b></i>
     <br />
     <br />
     <img src="https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/cobalt.png" width="200">
     <br>
     <a href="https://github.com/ipfs/js-ipfs/tree/master/docs">Explore the docs</a>
     ·
-    <a href="https://codesandbox.io/">View Demo</a>
+    <a href="https://githubbox.com/ipfs-examples/js-ipfs-examples/tree/master/examples/">View Demo</a>
     ·
-    <a href="https://github.com/ipfs/js-ipfs/issues">Report Bug</a>
+    <a href="https://github.com/ipfs-examples/js-ipfs-examples/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ipfs/js-ipfs/issues">Request Feature</a>
+    <a href="https://github.com/ipfs-examples/js-ipfs-examples/issues">Request Feature/Example</a>
   </p>
 
 ## Table of Contents
@@ -35,14 +35,14 @@
 
 ## About The Project
 
-* Read the [docs](https://github.com/ipfs/js-ipfs/tree/master/docs)
-* Look into other [examples](https://github.com/ipfs/js-ipfs/tree/master/examples) to learn how to spawn an IPFS node in Node.js and in the Browser
-* Consult the [Core API docs](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api) to see what you can do with an IPFS node
-* Visit https://dweb-primer.ipfs.io to learn about IPFS and the concepts that underpin it
-* Head over to https://proto.school to take interactive tutorials that cover core IPFS APIs
-* Check out https://docs.ipfs.io for tips, how-tos and more
-* See https://blog.ipfs.io for news and more
-* Need help? Please ask 'How do I?' questions on https://discuss.ipfs.io
+- Read the [docs](https://github.com/ipfs/js-ipfs/tree/master/docs)
+- Look into other [examples](https://github.com/ipfs/js-ipfs/tree/master/examples) to learn how to spawn an IPFS node in Node.js and in the Browser
+- Consult the [Core API docs](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api) to see what you can do with an IPFS node
+- Visit https://dweb-primer.ipfs.io to learn about IPFS and the concepts that underpin it
+- Head over to https://proto.school to take interactive tutorials that cover core IPFS APIs
+- Check out https://docs.ipfs.io for tips, how-tos and more
+- See https://blog.ipfs.io for news and more
+- Need help? Please ask 'How do I?' questions on https://discuss.ipfs.io
 
 ## Getting Started
 
@@ -94,26 +94,26 @@ _For more examples, please refer to the [Documentation](#documentation)_
 
 ## Documentation
 
-* [Config](https://docs.ipfs.io/)
-* [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api)
-* [Examples](https://github.com/ipfs/js-ipfs/tree/master/examples)
-* [Development](https://github.com/ipfs/js-ipfs/blob/master/docs/DEVELOPMENT.md)
+- [Config](https://docs.ipfs.io/)
+- [Core API](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api)
+- [Examples](https://github.com/ipfs/js-ipfs/tree/master/examples)
+- [Development](https://github.com/ipfs/js-ipfs/blob/master/docs/DEVELOPMENT.md)
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the IPFS Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Fork the IPFS Examples Project (`https://github.com/ipfs-examples/js-ipfs-examples`)
+2. Create your Feature Branch (`git checkout -b feature/amazing-feature`)
+3. Commit your Changes (`git commit -a -m 'feat: add some amazing feature'`)
+4. Push to the Branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## Want to hack on IPFS?
 
 [![](https://cdn.rawgit.com/jbenet/contribute-ipfs-gif/master/img/contribute.gif)](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md)
 
-The IPFS implementation in JavaScript needs your help!  There are a few things you can do right now to help out:
+The IPFS implementation in JavaScript needs your help! There are a few things you can do right now to help out:
 
 Read the [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md) and [JavaScript Contributing Guidelines](https://github.com/ipfs/community/blob/master/CONTRIBUTING_JS.md).
 
