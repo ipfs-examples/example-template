@@ -1,0 +1,27 @@
+{
+  "name": "example-todo-name",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TODO: Description",
+  "keywords": [],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist ./.cache ./.parcel-cache",
+    "build": "parcel build index.html --no-scope-hoist",
+    "serve": "parcel serve index.html --open -p 8888",
+    "start": "npm run serve",
+    "test": "npm run build && playwright test tests"
+  },
+  "browserslist": "last 1 Chrome version",
+  "dependencies": {
+    "ipfs": "^0.58.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@playwright/test": "^1.12.3",
+    "parcel": "latest",
+    "playwright": "^1.12.3",
+    "rimraf": "^3.0.2",
+    "test-util-ipfs-example": "^1.0.2"
+  }
+}
